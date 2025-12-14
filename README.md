@@ -88,10 +88,10 @@ Sweets: Verifies GET /api/sweets and Price Range filtering logic.
 📸 Screenshots
 
 ### 🧁 Dashboard & Price Filter
-![Dashboard and Price Filter](https://github.com/ganeshdornala/sweet-shop-app/blob/main/assets/dashboard_pricing.png?raw=true)
+![Dashboard and Price Filter](assets/dashboard_pricing.png)
 
 ### ✅ Test Report (All Tests Passed)
-![Test Report](https://github.com/ganeshdornala/sweet-shop-app/blob/main/assets/test_report.png?raw=true)
+![Test Report](assets/test_report.png)
 
 
 🤖 My AI Usage
