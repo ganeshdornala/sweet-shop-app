@@ -87,10 +87,10 @@ Sweets: Verifies GET /api/sweets and Price Range filtering logic.
 
 📸 Screenshots
 ### Dashboard & Price Filter
-![](https://github.com/ganeshdornala/sweet-shop-app/blob/main/assets/test_report.png)
+![Dashboard and Price Filter Screenshot](https://github.com/ganeshdornala/sweet-shop-app/blob/main/assets/dashboard_pricing.png?raw=true)
 
 ### Test Report (All Passed)
-![](https://github.com/ganeshdornala/sweet-shop-app/blob/main/assets/test_report.png)
+![Test Report Screenshot](https://github.com/ganeshdornala/sweet-shop-app/blob/main/assets/test_report.png?raw=true)
 
 🤖 My AI Usage
 In compliance with the project guidelines, I utilized Google Gemini as an AI co-author to assist in the development lifecycle.
