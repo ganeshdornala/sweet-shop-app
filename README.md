@@ -87,13 +87,9 @@ Sweets: Verifies GET /api/sweets and Price Range filtering logic.
 
 📸 Screenshots
 
-<p align="center">
-  <img src="assets/dashboard_pricing.png" width="85%" />
-</p>
+![](https://github.com/ganeshdornala/sweet-shop-app/blob/main/test_report.png)
 
-<p align="center">
-  <img src="assets/test_report.png" width="85%" />
-</p>
+![](https://github.com/ganeshdornala/sweet-shop-app/blob/main/test_report.png)
 
 
 
