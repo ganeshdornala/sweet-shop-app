@@ -1,0 +1,72 @@
+:root {
+  --primary: #d35400; /* Pumpkin Orange */
+  --secondary: #2c3e50; /* Dark Blue */
+  --bg: #f4f7f6;
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: var(--white);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+.header h1 { margin: 0; color: var(--primary); }
+.header-controls { display: flex; gap: 15px; align-items: center; }
+
+/* Buttons */
+.btn { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; color: white; transition: 0.2s; }
+.btn-primary { background: var(--primary); }
+.btn-primary:hover { background: #e67e22; }
+.btn-logout { background: var(--secondary); }
+.btn-success { background: #27ae60; width: 100%; margin-top: 10px;}
+.btn-edit { background: #3498db; flex: 1; }
+.btn-delete { background: #e74c3c; flex: 1; }
+
+/* Sweets Grid */
+.sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.sweet-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+.sweet-card:hover { transform: translateY(-5px); }
+.sweet-card h3 { margin: 0 0 5px 0; color: var(--secondary); }
+.category { color: #7f8c8d; font-size: 0.9em; margin-bottom: 15px; font-style: italic; }
+.details { display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1em; }
+
+/* Search Bar */
+.search-bar { display: flex; gap: 10px; margin-bottom: 30px; justify-content: center; }
+.search-bar input, .price-dropdown { padding: 12px; border: 1px solid #ddd; border-radius: 5px; width: 300px; }
+
+/* Admin Actions */
+.admin-actions { display: flex; gap: 10px; margin-top: 10px; }

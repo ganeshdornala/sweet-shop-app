@@ -21,9 +21,9 @@ export const registerUser=async (req,res)=>{
         if(user){
             res.status(201).json({
                 _id:user.id,
-                username:user.username,
+                name:user.username,
                 email:user.email,
-                token:generateToken(User._id)
+                token:generateToken(user._id)
             });
         }else{
             res.status(400).json({
@@ -44,7 +44,7 @@ export const loginUser=async(req,res)=>{
         if(user&&(await bcrypt.compare(password,user.password))){
             res.json({
                 _id:user.id,
-                username:user.username,
+                name:user.username,
                 email:user.email,
                 token:generateToken(user._id),
                 isAdmin:user.isAdmin
