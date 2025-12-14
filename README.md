@@ -1,5 +1,9 @@
 # Sweet Shop Management App 🍬
 
+![Dashboard_Pricing](https://github.com/ganeshdornala/sweet-shop-app/blob/31a53355ad964552504f58e5fd85f07ac1c16ee4/assets/dashboard_pricing.png)
+
+![TestCase Report](https://github.com/ganeshdornala/sweet-shop-app/blob/31a53355ad964552504f58e5fd85f07ac1c16ee4/assets/test_report.png)
+
 A robust full-stack application for managing a sweet shop's inventory and sales. This Single Page Application (SPA) allows users to browse sweets, filter by price, and make purchases, while providing administrators with tools to manage stock, update products, and oversee inventory.
 
 ## 🚀 Features
@@ -84,13 +88,6 @@ Test Coverage:
 Auth: Verifies Register, Login, Duplicate User prevention, and Token generation.
 
 Sweets: Verifies GET /api/sweets and Price Range filtering logic.
-
-📸 Screenshots
-###Dashboard Pricing
-![](https://github.com/ganeshdornala/sweet-shop-app/blob/b91772f0dbcd74ac6a17df7c9e00b0144eb8a701/dashboard_pricing.png)
-
-###Test Cases Report
-![](https://github.com/ganeshdornala/sweet-shop-app/blob/b91772f0dbcd74ac6a17df7c9e00b0144eb8a701/test_report.png)
 
 🤖 My AI Usage
 In compliance with the project guidelines, I utilized Google Gemini as an AI co-author to assist in the development lifecycle.
