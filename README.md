@@ -86,12 +86,11 @@ Auth: Verifies Register, Login, Duplicate User prevention, and Token generation.
 Sweets: Verifies GET /api/sweets and Price Range filtering logic.
 
 📸 Screenshots
+###Dashboard Pricing
+![](https://github.com/ganeshdornala/sweet-shop-app/blob/b91772f0dbcd74ac6a17df7c9e00b0144eb8a701/dashboard_pricing.png)
 
-[![](https://github.com/ganeshdornala/sweet-shop-app/blob/main/test_report.png)](https://github.com/ganeshdornala/sweet-shop-app/blob/main/dashboard_pricing.png)
-
-[![](https://github.com/ganeshdornala/sweet-shop-app/blob/main/test_report.png)](https://github.com/ganeshdornala/sweet-shop-app/blob/main/test_report.png)
-
-
+###Test Cases Report
+![](https://github.com/ganeshdornala/sweet-shop-app/blob/b91772f0dbcd74ac6a17df7c9e00b0144eb8a701/test_report.png)
 
 🤖 My AI Usage
 In compliance with the project guidelines, I utilized Google Gemini as an AI co-author to assist in the development lifecycle.
