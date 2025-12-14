@@ -1,9 +1,13 @@
 :root {
   --primary: #d35400; /* Pumpkin Orange */
+  --primary-hover: #ba4a00;
   --secondary: #2c3e50; /* Dark Blue */
-  --bg: #f4f7f6;
+  --bg: #f0f2f5;
   --white: #ffffff;
-  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+  --text-dark: #333;
+  --text-light: #666;
+  --shadow: 0 8px 24px rgba(0,0,0,0.12);
+  --radius: 12px;
 }
 
 body {
@@ -11,16 +15,119 @@ body {
   background-color: var(--bg);
   margin: 0;
   padding: 0;
-  color: #333;
+  color: var(--text-dark);
 }
 
+/* --- Container for Dashboard --- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Header */
+/* --- AUTH PAGES (Login/Register) STYLES --- */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Centers vertically */
+  padding: 20px;
+}
+
+.auth-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+}
+
+.auth-header {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.auth-subtitle {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.auth-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(211, 84, 0, 0.1);
+  outline: none;
+}
+
+.auth-btn {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.auth-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+.error-msg {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* --- Keep Existing Dashboard Styles Below --- */
 .header {
   display: flex;
   justify-content: space-between;
@@ -29,44 +136,23 @@ body {
   background: var(--white);
   padding: 15px 20px;
   border-radius: 8px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 .header h1 { margin: 0; color: var(--primary); }
 .header-controls { display: flex; gap: 15px; align-items: center; }
 
-/* Buttons */
+/* Dashboard Buttons */
 .btn { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; color: white; transition: 0.2s; }
 .btn-primary { background: var(--primary); }
-.btn-primary:hover { background: #e67e22; }
 .btn-logout { background: var(--secondary); }
 .btn-success { background: #27ae60; width: 100%; margin-top: 10px;}
 .btn-edit { background: #3498db; flex: 1; }
 .btn-delete { background: #e74c3c; flex: 1; }
-
-/* Sweets Grid */
-.sweets-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.sweet-card {
-  background: var(--white);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s;
-}
-.sweet-card:hover { transform: translateY(-5px); }
-.sweet-card h3 { margin: 0 0 5px 0; color: var(--secondary); }
-.category { color: #7f8c8d; font-size: 0.9em; margin-bottom: 15px; font-style: italic; }
-.details { display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1em; }
-
-/* Search Bar */
-.search-bar { display: flex; gap: 10px; margin-bottom: 30px; justify-content: center; }
-.search-bar input, .price-dropdown { padding: 12px; border: 1px solid #ddd; border-radius: 5px; width: 300px; }
-
-/* Admin Actions */
 .admin-actions { display: flex; gap: 10px; margin-top: 10px; }
+
+/* Grid & Search */
+.sweets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
+.sweet-card { background: var(--white); padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+.details { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 15px;}
+.search-bar { display: flex; gap: 10px; margin-bottom: 30px; justify-content: center; }
+.search-bar input, .price-dropdown { padding: 12px; border: 1px solid #ddd; border-radius: 5px; }
