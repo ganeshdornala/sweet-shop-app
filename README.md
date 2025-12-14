@@ -88,7 +88,7 @@ Sweets: Verifies GET /api/sweets and Price Range filtering logic.
 📸 Screenshots
 
 ### 🧁 Dashboard & Price Filter
-![Dashboard and Price Filter](assets/dashboard_pricing.png)
+![Dashboard & Price Filter](assets/dashboard_pricing.png)
 
 ### ✅ Test Report (All Tests Passed)
 ![Test Report](assets/test_report.png)
